@@ -19,14 +19,12 @@
             border-radius: 10px;
             background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            position: relative;
-            overflow: hidden;
         }
         .product-image {
             display: block;
             max-width: 100%;
             height: auto;
-            margin: 0 auto 20px;
+            margin: 0 auto 20px; /* Center the image and add bottom margin */
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
@@ -39,8 +37,8 @@
         h2 {
             color: #d32f2f;
             text-align: center;
-            font-size: 1.5em;
-            margin-top: 10px;
+            font-size: 1.8em;
+            margin-top: 20px;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
         .features, .benefits {
@@ -50,12 +48,6 @@
             background-color: #fffde7;
             border: 2px solid #ffeb3b;
         }
-        .section-title {
-            text-align: center;
-            font-size: 1.5em;
-            color: #ff9800;
-            margin-bottom: 10px;
-        }
         .feature-item, .benefit-item {
             margin: 10px 0;
             padding: 10px;
@@ -63,13 +55,12 @@
             border-left: 5px solid #ff9800;
             border-radius: 4px;
             font-size: 1.1em;
-            display: flex;
-            align-items: center;
+            position: relative;
+            transition: transform 0.2s;
         }
-        .icon {
-            margin-right: 10px;
-            width: 24px;
-            height: 24px;
+        .feature-item:hover, .benefit-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         footer {
             text-align: center;
@@ -80,40 +71,48 @@
         .cta-button {
             display: inline-block;
             padding: 10px 20px;
-            background: linear-gradient(45deg, #4caf50, #66bb6a);
+            background-color: #4caf50;
             color: white;
             border-radius: 25px;
             text-decoration: none;
             font-size: 1.2em;
             margin-top: 20px;
-            transition: background-color 0.3s, transform 0.3s;
-            text-align: center;
+            transition: background-color 0.3s;
         }
         .cta-button:hover {
-            background: linear-gradient(45deg, #388e3c, #43a047);
-            transform: translateY(-2px);
+            background-color: #388e3c;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
+    <!-- Logo added here -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100" style="display: block; margin: 0 auto;">
+        <style>
+            .text { font: bold 24px sans-serif; fill: #ff6f00; }
+            .pulse { fill: none; stroke: #4caf50; stroke-width: 3; }
+        </style>
+        <path class="pulse" d="M10 60 Q 30 10, 50 50 T 90 50 T 130 50 T 170 20 V 60" />
+        <text x="60" y="40" class="text">trackNtrend</text>
+    </svg>
+
     <img src="https://github.com/TrackNtrend/trackNtrend.github.io/blob/main/Wearable-technology-Fitness-tracker-data-backed-to-boost-research-and-personalised-health.jpg?raw=true" alt="trackNtrend Product" class="product-image">
     
     <h1>Welcome to trackNtrend</h1>
     <h2>Stay Ahead of Every Beat</h2>
     
     <div class="features">
-        <div class="section-title">Features</div>
-        <div class="feature-item"><img src="https://img.icons8.com/ios-filled/50/000000/heartbeat.png" class="icon" alt="Health Metrics Icon">Real-time health metrics: Heart rate, breathing rate</div>
-        <div class="feature-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" class="icon" alt="Speed Icon">Tracks speed, distance, and calories burned</div>
-        <div class="feature-item"><img src="https://img.icons8.com/ios-filled/50/000000/smartphone.png" class="icon" alt="Mobile App Icon">Mobile app integration for data analysis</div>
-        <div class="feature-item"><img src="https://img.icons8.com/ios-filled/50/000000/rain.png" class="icon" alt="Water Resistant Icon">Water-resistant and long battery life</div>
+        <h3>Features</h3>
+        <div class="feature-item">Real-time health metrics: Heart rate, breathing rate</div>
+        <div class="feature-item">Tracks speed, distance, and calories burned</div>
+        <div class="feature-item">Mobile app integration for data analysis</div>
+        <div class="feature-item">Water-resistant and long battery life</div>
     </div>
 
     <div class="benefits">
-        <div class="section-title">Benefits</div>
-        <div class="benefit-item"><img src="https://img.icons8.com/ios-filled/50/000000/goal.png" class="icon" alt="Goal Icon">Achieve your best with data-driven insights and performance tracking!</div>
+        <h3>Benefits</h3>
+        <div class="benefit-item">Achieve your best with data-driven insights and performance tracking!</div>
     </div>
 
     <a href="#" class="cta-button">Discover Our Latest Product!</a>
