@@ -1,1 +1,1 @@
-# treckNtrend.github.io
+# trackNtrend.github.io
