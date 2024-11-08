@@ -3,125 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trackNtrend Digital Flyer</title>
+    <title>trackNtrend Advertisement</title>
     <style>
-        /* Basic Styles */
         body {
             font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+            color: #333;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #f0f9ff, #f9fbe7);
-            color: #333;
-            overflow-x: hidden;
         }
         .container {
             max-width: 800px;
-            margin: 40px auto;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 15px;
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-            text-align: center;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
-        /* Header */
+        .product-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto 20px; /* Center the image and add bottom margin */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
         h1 {
             color: #ff6f00;
+            text-align: center;
             font-size: 2.5em;
-            animation: fadeIn 2s ease-in;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
-        .slogan {
+        h2 {
             color: #d32f2f;
-            font-size: 1.5em;
-            margin-top: 10px;
-            animation: fadeInUp 2s ease-in-out;
-        }
-        /* Sections */
-        .section {
-            margin: 20px 0;
-            animation: fadeInUp 1s ease-in-out;
+            text-align: center;
+            font-size: 1.8em;
+            margin-top: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
         .features, .benefits {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 15px;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fffde7;
+            border: 2px solid #ffeb3b;
         }
         .feature-item, .benefit-item {
+            margin: 10px 0;
+            padding: 10px;
             background-color: #ffe0b2;
-            margin: 8px 0;
-            padding: 12px;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #ff9800;
+            border-radius: 4px;
+            font-size: 1.1em;
+            position: relative;
             transition: transform 0.2s;
-            animation: slideIn 1.2s ease;
         }
         .feature-item:hover, .benefit-item:hover {
-            transform: scale(1.05);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        /* Call to Action */
-        .cta-button {
+        footer {
+            text-align: center;
             margin-top: 30px;
-            padding: 12px 24px;
-            font-size: 1.2em;
-            color: #fff;
+            font-size: 1em;
+            color: #555;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
             background-color: #4caf50;
+            color: white;
             border-radius: 25px;
             text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 20px;
             transition: background-color 0.3s;
         }
         .cta-button:hover {
             background-color: #388e3c;
-        }
-        /* Footer */
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #777;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideIn {
-            from { transform: translateX(-100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Logo Section -->
-    <h1>trackNtrend</h1>
-    <p class="slogan">Stay Ahead of Every Beat</p>
+    <!-- Logo added here -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100" style="display: block; margin: 0 auto;">
+        <style>
+            .text { font: bold 24px sans-serif; fill: #ff6f00; }
+            .pulse { fill: none; stroke: #4caf50; stroke-width: 3; }
+        </style>
+        <path class="pulse" d="M10 60 Q 30 10, 50 50 T 90 50 T 130 50 T 170 20 V 60" />
+        <text x="60" y="40" class="text">trackNtrend</text>
+    </svg>
 
-    <!-- Product Highlights -->
-    <div class="section features">
-        <h2>Product Highlights</h2>
-        <div class="feature-item">Real-time Health Tracking: Heart rate and breathing rate</div>
+    <img src="https://github.com/TrackNtrend/trackNtrend.github.io/blob/main/Wearable-technology-Fitness-tracker-data-backed-to-boost-research-and-personalised-health.jpg?raw=true" alt="trackNtrend Product" class="product-image">
+    
+    <h1>Welcome to trackNtrend</h1>
+    <h2>Stay Ahead of Every Beat</h2>
+    
+    <div class="features">
+        <h3>Features</h3>
+        <div class="feature-item">Real-time health metrics: Heart rate, breathing rate</div>
         <div class="feature-item">Tracks speed, distance, and calories burned</div>
-        <div class="feature-item">App Integration for data analysis</div>
+        <div class="feature-item">Mobile app integration for data analysis</div>
         <div class="feature-item">Water-resistant and long battery life</div>
     </div>
 
-    <!-- Benefits -->
-    <div class="section benefits">
-        <h2>Benefits</h2>
+    <div class="benefits">
+        <h3>Benefits</h3>
         <div class="benefit-item">Achieve your best with data-driven insights and performance tracking!</div>
-        <div class="benefit-item">Stylish design and eco-friendly with recyclable packaging.</div>
     </div>
 
-    <!-- Call to Action -->
     <a href="#" class="cta-button">Discover Our Latest Product!</a>
 
-    <!-- Footer -->
-    <footer>© 2024 trackNtrend. All rights reserved.</footer>
+    <footer>
+        © 2024 trackNtrend<br>
+        Check out our latest product
+    </footer>
 </div>
 
 </body>
